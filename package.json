@@ -1,16 +1,26 @@
-{
-  "name": "dilshan-md-bot",
+  "name": "dilshan-md",
   "version": "1.0.0",
-  "description": "WhatsApp bot using Baileys",
+  "description": "DILSHAN-MD WhatsApp Bot created by Dilshan Ashinsa",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "pair": "node pair.js"
   },
-  "dependencies": {
-    "@whiskeysockets/baileys": "^6.0.0"
-  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "baileys",
+    "dilshan",
+    "dilshan-md"
+  ],
   "author": "Dilshan Ashinsa",
-  "license": "MIT"
-}
-
-
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.0.0",
+    "chalk": "^5.3.0",
+    "figlet": "^1.5.2",
+    "node-fetch": "^3.3.2",
+    "axios": "^1.6.7",
+    "moment": "^2.29.4"
+  } 
