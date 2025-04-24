@@ -1,4 +1,3 @@
-```javascript
 import makeWASocket, { useMultiFileAuthState, DisconnectReason } from '@whiskeysockets/baileys';
 
 async function startBot() {
