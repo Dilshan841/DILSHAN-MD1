@@ -5,7 +5,7 @@ async function startBot() {
     const { state, saveCreds } = await useMultiFileAuthState('auth_info_dilshanmd'); // Auth state එක save කරන folder එක
     const sock = makeWASocket({
         auth: state,
-        printQRInTerminal: false, // QR code print කිරීම නොකරන්න
+        printQRInTerminal: false,
         browser: ['DILSHAN-MD', 'Chrome', '1.0.0'],
     });
 
@@ -27,7 +27,7 @@ async function startBot() {
 
     // Pairing Code request කිරීම
     if (!sock.authState.creds.registered) {
-    const phoneNumber = '94772194789'; // ඔබගේ WhatsApp අංකය (E.164 format)
+    const phoneNumber = '94772194789'; 
         const code = await sock.requestPairingCode(phoneNumber); // Pairing Code request
         console.log('📱 Pairing Code: ' + code); // Terminal එකේ Pairing Code print වෙයි
     }
