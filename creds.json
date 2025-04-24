@@ -1,0 +1,18 @@
+{
+  "creds": {
+    "me": {
+      "id": "1234567890@c.us",
+      "name": "Dilshan Ashinsa"
+    },
+    "registration": {
+      "phone": "94772194789", 
+      "code": "123456",
+      "status": "success"
+    },
+    "sessionId": "unique-session-id-value-here", 
+    "lastConnection": {
+      "time": "2025-04-24T12:00:00Z", 
+      "status": "connected"
+    }
+  }
+}
