@@ -1,0 +1,19 @@
+```json
+{
+  "name": "dilshan-md-bot",
+  "version": "1.0.0",
+  "description": "WhatsApp bot using Baileys",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.0.0"
+  },
+  "author": "Dilshan Ashinsa",
+  "license": "MIT"
+}
+```
+
+---
+
