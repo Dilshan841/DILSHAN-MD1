@@ -1,24 +1,25 @@
 module.exports = {
-  // Bot Settings
-  botName: 'DILSHAN-MD', // Bot name (Display name)
-  ownerNumber: '94712345678', // Your phone number (E.164 format)
-  ownerName: 'Dilshan Ashinsa', // Your name
+  // බොට් නම
+  botName: 'DILSHAN-MD',
 
-  // Command prefix
-  prefix: '.', // Prefix to use before the commands (e.g., .menu)
+  // බොට් හිමිකරුගේ WhatsApp අංකය (E.164 format: +94... හැටියට)
+  ownerNumber: '94772194789',
 
-  // Auth credentials folder path (where creds.json will be stored)
-  authFolder: './auth_info_dilshanmd', // Default folder for auth information
+  // හිමිකරුගේ නම
+  ownerName: 'Dilshan Ashinsa',
 
-  // Server and Network settings
-  serverPort: 8080, // Port to run the server (change as needed)
-  apiBaseUrl: 'https://api.whatsapp.com', // Base API URL for WhatsApp bot interactions
-  sessionFilePath: './auth_info_dilshanmd/creds.json', // Path for saving session info (creds.json)
+  // Command වල prefix එක (උදා: .menu, .hello)
+  prefix: '.',
 
-  // Command settings
-  menuCommand: '.menu', // Command to show the menu
-  statusCommand: '.status', // Command to check the status
-  helloCommand: '.hello', // Command to greet the user
-  songCommand: '.song', // Command for song request
+  // auth info save වෙන්න තියෙන folder එකේ නම
+  authFolder: './auth_info_dilshanmd',
+
+  // session එක save වෙන්න තියෙන file path එක
+  sessionFilePath: './auth_info_dilshanmd/creds.json',
+
+  // පාවිච්චි කරන Port එක (replit එකේ නම් අවශ්‍ය නැහැ වෙනස් කරන්න)
+  serverPort: 3000,
+
+  // API URL එක (advanced usage එකකට, default එක තැබුනා)
+  apiBaseUrl: 'https://api.whatsapp.com'
 };
-
