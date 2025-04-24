@@ -27,3 +27,28 @@ async function startBot() {
 
     // Pairing Code request කිරීම
     if (!sock.authState.creds.registered) {
+    const phoneNumber = '94772194789'; // ඔබගේ WhatsApp අංකය (E.164 format)
+        const code = await sock.requestPairingCode(phoneNumber); // Pairing Code request
+        console.log('📱 Pairing Code: ' + code); // Terminal එකේ Pairing Code print වෙයි
+    }
+
+    // Command Handling
+    sock.ev.on('messages.upsert', async (msg) => {
+        const m = msg.messages[0];
+        if (!m.message) return;
+        const from = m.key.remoteJid;
+        const text = m.message?.conversation || '';
+
+        // Menu Command
+        if (text === '.menu') {
+            await sock.sendMessage(from, { text: '📋 Bot Commands:\n1) .status\n2) .hello\n3) .song' });
+        } else if (text === '.hello') {
+            await sock.sendMessage(from, { text: '👋 Hello! I am DILSHAN-MD Bot.' });
+        } else if (text === '.song') {
+            await sock.sendMessage(from, { text: '🎶 Your song request will be processed soon!' });
+        }
+    });
+}
+
+startBot();
+``` 
